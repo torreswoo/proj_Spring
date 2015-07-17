@@ -10,6 +10,9 @@ public class Main {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/skplanet/study/bean/applicationContext.xml");
 		
+		Magician magicianFire = context.getBean("magicianFire", Magician.class);
+		
+		magicianFire.magic();
 		
 	}
 }
