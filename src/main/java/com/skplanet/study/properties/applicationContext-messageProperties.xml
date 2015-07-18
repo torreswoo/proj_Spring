@@ -4,27 +4,16 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:util="http://www.springframework.org/schema/util"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
-						http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+						http://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/context 
 						http://www.springframework.org/schema/context/spring-context-4.1.xsd
 						http://www.springframework.org/schema/util 
 						http://www.springframework.org/schema/util/spring-util-4.1.xsd">
-
-	<!-- 1. 생성자로 DI -->
-	<!-- 
-	<bean id="magicFire" class="com.skplanet.study.bean.MagicSystemFire"></bean>
-	<bean id="magicianFire" class="com.skplanet.study.bean.Magician">
-		<constructor-arg ref="magicFire"></constructor-arg>
-	</bean> 
-	-->
 	
 	
-	<!-- 2. 애노테이션으로 DI -->
-	<!-- <bean id="magicianFire" class="com.skplanet.study.bean.Magician"></bean> -->
 	<context:annotation-config/>
-	<context:component-scan base-package="com.skplanet.*"/>
+	<context:component-scan base-package="com.skplanet.study.properties"/>
 	
-	
-	
+	<util:properties id="msgProperties" location="classpath:com/skplanet/study/properties/message.properties"/>
 
 </beans>

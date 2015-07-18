@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/resources/spring/application-config.xml</config>
 		<config>src/main/java/com/skplanet/study/bean/applicationContext.xml</config>
+		<config>src/main/java/com/skplanet/study/properties/applicationContext-messageProperties.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
