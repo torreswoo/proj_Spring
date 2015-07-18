@@ -1,5 +1,8 @@
 package com.skplanet.study.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MagicSystemIce implements MagicSystem {
 
 	@Override
