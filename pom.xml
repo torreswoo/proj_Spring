@@ -62,6 +62,14 @@
 			<version>${spring-framework.version}</version>
 		</dependency>
 		
+			<!-- spring AOP -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+				
+		
 		<!-- Other Web dependencies -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
